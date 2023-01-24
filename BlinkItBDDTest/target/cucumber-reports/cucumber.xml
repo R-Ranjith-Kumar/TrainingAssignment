@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="168.29">
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to add an item to the cart" time="14.191">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I search a product 'sugar free gold sweetener'..........................passed
+When I add the 'Sugar Free Gold Sweetener' to the cart......................passed
+Then I should be able to see the product 'Sugar Free Gold Sweetener' in the cart.passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to add an item to the cart 2" time="10.885">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I search a product 'Kissan Mixed Fruit Jam'.............................passed
+When I add the 'Kissan Mixed Fruit Jam' to the cart.........................passed
+Then I should be able to see the product 'Kissan Mixed Fruit Jam' in the cart.passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to remove a item to the cart" time="12.443">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I search a product 'sugar free gold sweetener'..........................passed
+And I add the 'Sugar Free Gold Sweetener' to the cart.......................passed
+When I remove the item 'Sugar Free Gold Sweetener' fron the cart............passed
+Then the item 'Sugar Free Gold Sweetener' should be removed from the cart...passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to remove a item to the cart 2" time="12.872">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I search a product 'Kissan Mixed Fruit Jam'.............................passed
+And I add the 'Kissan Mixed Fruit Jam' to the cart..........................passed
+When I remove the item 'Kissan Mixed Fruit Jam' fron the cart...............passed
+Then the item 'Kissan Mixed Fruit Jam' should be removed from the cart......passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to see empty cart if no item is added" time="8.422">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+When I click the cart.......................................................passed
+Then I should be able to see the message "You don't have any items in your cart".passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to proceed to checkout" time="30.398">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I click on login........................................................passed
+And I give the valid login credentials "7904654159" and click login.........passed
+And I search a product 'Kissan Mixed Fruit Jam'.............................passed
+And I add the 'Kissan Mixed Fruit Jam' to the cart..........................passed
+When I proceed to checkout after selecting address..........................passed
+Then I should be see the payment page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to increase item to the cart" time="11.594">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I search a product 'Kissan Mixed Fruit Jam'.............................passed
+And I add the 'Kissan Mixed Fruit Jam' to the cart..........................passed
+When I increase the 'Kissan Mixed Fruit Jam' in the cart....................passed
+Then the quantity of the 'Kissan Mixed Fruit Jam' should be increased.......passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use cart features" name="Verify the user is able to decrease item to the cart" time="10.838">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+And I search a product 'Kissan Mixed Fruit Jam'.............................passed
+And I add the 'Kissan Mixed Fruit Jam' to the cart..........................passed
+When I decrease the 'Kissan Mixed Fruit Jam' in the cart....................passed
+Then the quantity of the 'Kissan Mixed Fruit Jam' should be decreased.......passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to login so that I can purchase" name="Verify the user is able to login with valid login" time="16.72">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+When I click on login.......................................................passed
+And I give the valid login credentials "7904654159" and click login.........passed
+Then I should be logged in to the web site..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to login so that I can purchase" name="Verify the user should not be able to login with invalid login" time="14.159">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+When I click on login.......................................................passed
+And I give the valid login credentials "7904654159" and invalid OTP and click login.passed
+Then I should not be able to login to the web site..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to search a product so that I can purchase" name="Verify the user is able to search a product" time="9.04">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+When I search a product 'Grocery 1kg Sugar'.................................passed
+Then I should be able to see the product 'Grocery 1kg Sugar' in the result page.passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to search a product so that I can purchase" name="Verify the user is able to search a product 2" time="8.094">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+When I search a product 'Kissan Mixed Fruit Jam'............................passed
+Then I should be able to see the product 'Kissan Mixed Fruit Jam' in the result page.passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to search a product so that I can purchase" name="Verify the user gets error message on invalid search" time="8.295">
+<system-out><![CDATA[Given I launch the website "BlinkIt"........................................passed
+When I search a invalid product 'dlskfjkljlskjdlks'.........................passed
+Then I should be able to see the error Message..............................passed
+]]></system-out>
+</testcase>
+</testsuite>
